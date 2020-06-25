@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+body {
+	direction: rtl;
+	font-family: 'Cairo', sans-serif;
+}
+
+header {
+	background-image: url(../img/banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+header .brand .logo {
+	padding-top: 100px;
+	padding-bottom: 35px;
+	border-bottom: 4px solid #474c54;
+	width: 160px;
+	margin: auto;
+	margin-bottom: 63px;
+}
+
+header .page-heading h1 {
+	font-size: 60px;
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 75px;
+}
+
+header .page-heading p {
+	font-size: 18px;
+	color: #acacac;
+	line-height: 25px;
+	width: 40%;
+	margin: 0 auto;
+}
+
+#defaultcountdown .countdown-amount {
+	color: #ffce00;
+	font-size: 60px;
+	display: block;
+	font-weight: bold;
+}
+
+#defaultcountdown .countdown-period {
+	color: #ffffff;
+	font-size: 30px;
+	display: block;
+	font-weight: bold;
+}
+
+#defaultcountdown .countdown-section {
+	display: inline-block;
+	margin-left: 75px;
+	margin-top: 100px;
+	margin-bottom: 180px;
+}
+
+.send-notification p {
+	color: #ffffff;
+	font-size: 18px;
+}
+
+.send-notification .input-group input {
+	font-size: 18px;
+	color: #e6e6e6;
+	border-width: 2px;
+	border-color: #e6e6e6;
+	border-radius: 0;
+}
+
+.send-notification .input-group button {
+	background-color: #ffce00;
+	padding: 13px 35px;
+	border-radius: 0;
+}
+
+.send-notification .form-group {
+	width: 470px;
+	margin: 0 auto;
+}
+
+.send-notification .input-group .alert {
+	position: absolute;
+	top: 110%;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
+.send-notification {
+	position: relative;
+	bottom: -30px;
+}
+
+section.features {
+	padding: 100px 0;
+	position: relative;
+}
+
+section.features h2 {
+	font-size: 45px;
+	color: #555555;
+	padding-top: 42px;
+	padding-bottom: 35px;
+}
+
+section.features .media {
+	border: 1px solid #e6e5e5;
+	padding: 40px 30px;
+	margin-bottom: 20px;
+	position: relative;
+	max-height: 190px;
+}
+
+section.features .media .media-body h5 {
+	font-size: 24px;
+	color: #555555;
+	width: 90%;
+	margin: 0 auto;
+}
+
+section.features .media .media-body p {
+	font-size: 15px;
+	color: #a1a1a1;
+	line-height: 25px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+section.features div[class*="col-"]:nth-child(even) {
+	text-align: left;
+}
+
+/*footer*/
+
+footer {
+	background-image: url(../img/footer.jpg);
+	background-size: cover;
+	background-position: 30%;
+}
+
+footer .top-footer .overlay {
+	background-color: rgba(255, 204, 0, 0.7);
+	padding: 60px 0;
+}
+
+footer .send-notification2 .input-group button {
+	background-color: #393939;
+	padding: 13px 35px;
+	border-radius: 0;
+}
+
+footer .send-notification2 .input-group .alert {
+	position: absolute;
+	top: 110%;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
+footer .send-notification2 p {
+	color: #555555;
+	font-size: 30px;
+	margin-bottom: 30px;
+	font-weight: 600;
+}
+
+footer .send-notification2 .input-group input {
+	font-size: 18px;
+	color: #e6e6e6;
+	border-width: 2px;
+	border-color: #e6e6e6;
+	border-radius: 0;
+}
+
+footer .send-notification2 .form-group {
+	width: 470px;
+	margin: 0 auto;
+}
+
+footer .overlay2 {
+	background-color: rgba(28, 28, 28, 0.7);
+}
+
+footer .overlay2 .socia {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	border-bottom: 2px solid rgba(42, 43, 49, 0.5);
+	width: 40%;
+	margin: 0 auto;
+}
+
+footer .overlay2 .socia h3 {
+	font-size: 30px;
+	color: #ffffff;
+	padding-bottom: 35px;
+}
+
+footer .contact .overlay2 ul {
+	padding: 0;
+}
+
+footer .contact .overlay2 ul li {
+	margin: 0 5px 10px;
+}
+
+footer .contact .overlay2 ul li a {
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	display: block;
+	background-color: rgba(255, 255, 255, 0.14);
+	color: #fff;
+	font-size: 1.2em;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+footer .overlay2 a.facebook:hover {
+	background-color: #3b5999;
+}
+
+footer .overlay2 a.twitter:hover {
+	background-color: #55acee;
+}
+
+footer .overlay2 a.linkedin:hover {
+	background-color: #0077b5;
+}
+
+footer .overlay2 a.instagram:hover {
+	background-color: #e4405f;
+}
+
+footer .overlay2 .EMAIL {
+	color: #b4b4b4;
+	padding: 35px 0;
+}
+
+footer .overlay2 .EMAIL i {
+	color: #fad32f;
+}
+
+@media(max-width:1199px) {
+	section.features .media {
+		max-height: 183px;
+	}
+}
+
+@media(max-width:991px) {
+	section.features .container {
+		width: 900px;
+	}
+	section.features .media {
+		max-height: 183px;
+	}
+}
+
+@media(max-width:850px) {
+	section.features .media {
+		max-height: 250px;
+	}
+	footer .overlay2 .socia {
+		width: 50%;
+	}
+}
+
+@media(max-width:767px) {
+	section.features .container {
+		width: 540px;
+	}
+	section.features .media {
+		max-height: 190px;
+	}
+	footer .overlay2 .socia {
+		width: 57%;
+	}
+	#defaultcountdown .countdown-section {
+		display: inline-block;
+		margin-left: 75px;
+		margin-top: 100px;
+		margin-bottom: 50px;
+		align-items: center;
+	}
+	header .page-heading p {
+		width: 70%;
+	}
+}
+
+@media(max-width:575px) {
+	footer .send-notification2 .form-group {
+		width: 99%;
+		margin: 0 auto;
+	}
+	footer .send-notification2 p {
+		padding: 0 15px;
+	}
+	footer .overlay2 .socia {
+		width: 100%;
+	}
+	.send-notification .form-group {
+		width: 99%;
+	}
+	section.features .container {
+		width: 100%;
+	}
+	header .brand .logo {
+		padding-top: 45px;
+		padding-bottom: 35px;
+		border-bottom: 4px solid #474c54;
+		width: 160px;
+		margin: auto;
+		margin-bottom: 40px;
+	}
+	#defaultcountdown .countdown-section {
+		margin-left: 30px;
+		margin-top: 70px;
+		margin-bottom: 50px;
+	}
+	header .page-heading h1 {
+		font-size: 45px;
+		line-height: 67px;
+	}
+	header .page-heading p {
+		width: 70%;
+	}
+}
+
+@media(max-width:423px) {
+	.media {
+		display: block;
+	}
+	section.features .media {
+		max-height: 400px;
+		text-align: center;
+	}
+	section.features h2 {
+		text-align: center;
+	}
+	footer .contact .overlay2 ul {
+		padding: 0;
+		width: 55%;
+		margin: 0 auto;
+	}
+}

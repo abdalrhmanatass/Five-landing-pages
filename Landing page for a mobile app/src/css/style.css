@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+body {
+	font-family: 'Cairo', sans-serif;
+	direction: rtl;
+	text-align: right;
+}
+
+header {
+	background-image: url(../img/bg-1\ copy.jpg);
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	background-attachment: fixed;
+	z-index: -3;
+}
+
+header .overlay {
+	background-color: rgba(239, 71, 58, 0.8);
+	z-index: -2;
+	position: relative;
+	padding-top: 90px;
+}
+
+header .overlay .app-icon {
+	padding-top: 120px;
+	padding-bottom: 55px;
+}
+
+header .overlay .banner-text h1 {
+	font-size: 30px;
+	color: #ffffff;
+	line-height: 36px;
+}
+
+header .overlay .banner-text p {
+	font-size: 18px;
+	line-height: 30px;
+	padding-top: 15px;
+	color: #ffffff;
+	margin-bottom: 90px;
+}
+
+header .overlay .banner-text button {
+	color: #000;
+	background-color: #fafafa;
+}
+
+header .overlay .banner-text button img {
+	width: 50px;
+	vertical-align: sub;
+}
+
+header .overlay .banner-text button i {
+	font-size: 50px;
+}
+
+header .overlay .banner-text button p {
+	font-size: 14px;
+	color: #090909;
+	line-height: 25px;
+	display: inline-block;
+	padding-top: 0;
+}
+
+header .overlay .banner-text button p span {
+	font-size: 18px;
+}
+
+header .overlay .banner-text button:last-child {
+	margin-right: 20px;
+}
+
+/*
+================
+feature
+===============*/
+
+section.feature {
+	background-color: #ffffff;
+	padding: 80px 0 85px;
+}
+
+section.feature .features-1 .media {
+	text-align: left;
+	direction: ltr;
+	margin-bottom: 60px;
+}
+
+section.feature .features-2 .media {
+	margin-bottom: 60px;
+}
+
+section.feature .media i {
+	color: #fff;
+	background-color: #ef473a;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	border-radius: 2px;
+	text-align: center;
+	display: block !important;
+}
+
+section.feature .features-2 .media .media-body {
+	padding-right: 15px;
+}
+
+section.feature .features-1 {
+	margin-top: 90px;
+}
+
+section.feature .features-2 {
+	margin-top: 90px;
+}
+
+section.feature .media h5 {
+	font-size: 24px;
+	color: #000;
+}
+
+section.feature .media P {
+	font-size: 15px;
+	color: #757474;
+}
+
+section.feature .mobile-img img {
+	width: 78%;
+	margin: 0 auto;
+	display: block;
+}
+
+/*
+============== 
+   option
+   ==============*/
+
+section.option {
+	background-color: #f9f8f8;
+	position: relative;
+	padding: 135px 0 110px;
+	z-index: -1;
+}
+
+section.option .imges {
+	position: absolute;
+	bottom: -56%;
+	right: -5%;
+}
+
+section.option .imges img {
+	width: 110%;
+}
+
+section.option .media {
+	margin-bottom: 70px;
+}
+
+section.option .media:last-child {
+	margin-bottom: 0;
+}
+
+section.option .media img {
+	padding-left: 10px;
+}
+
+section.option .media h5 {
+	font-size: 24px;
+	color: #141414;
+}
+
+section.option .media p {
+	font-size: 15px;
+	color: #757474;
+}
+
+/*
+============
+slider
+=============*/
+
+section.slider {
+	background-color: #fff;
+	z-index: -1;
+	text-align: center;
+	align-items: center;
+	padding: 80px 0 125px;
+}
+
+section.slider .title h3 {
+	padding-bottom: 60px;
+	font-size: 36px;
+	color: #141414;
+}
+
+section.slider .carousel ol li {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #ef473a;
+	border-radius: 50%;
+	top: 70px;
+}
+
+section.slider .carousel ol li.active {
+	background-color: #ef473a;
+}
+
+section.slider .carousel a {
+	margin: 0 -50px;
+}
+
+section.slider .carousel a span {
+	color: #ef473a;
+	width: 75px;
+	height: 75px;
+	border: 1px solid #ef473a;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 75px;
+	display: block !important;
+}
+
+/*
+=================
+faq
+================*/
+
+section.faq {
+	background-image: url(../img/bg-2.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+section.faq .overlay {
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 70px 0 80px;
+}
+
+section.faq .overlay .title h3 {
+	font-size: 30px;
+	color: #ffffff;
+	padding-bottom: 70px;
+}
+
+section.faq .overlay .accordion .card {
+	margin-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #ffffff;
+}
+
+section.faq .overlay .accordion .card .card-header {
+	border: none;
+}
+
+section.faq .overlay .accordion .card .card-header h5 {
+	color: #ffffff;
+	font-size: 18px;
+}
+
+section.faq .overlay .accordion .card .card-header a {
+	width: 100%;
+}
+
+section.faq .overlay .accordion .card .card-header i {
+	float: left;
+}
+
+section.faq .overlay .accordion .card p {
+	color: #c9c9c9;
+	font-size: 15px;
+}
+
+section.faq .overlay .card .card-header h5 a.collapsed[aria-expanded="false"] i:before {
+	content: "\f107";
+}
+
+/*
+===========
+footer
+=========*/
+
+footer {
+	background-color: #232323;
+}
+
+footer .title h4 {
+	font-size: 24px;
+	color: #f4f8fb;
+	line-height: 80px;
+}
+
+footer .title {
+	margin-bottom: 35px;
+	border-bottom: 2px solid #272727;
+	position: relative;
+}
+
+footer .title h4::after {
+	width: 90px;
+	height: 2px;
+	background-color: #ef473a;
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	right: 0;
+	display: inline-block;
+}
+
+footer#footer .contant p {
+	font-size: 18px;
+	line-height: 40px;
+	color: #757474;
+}
+
+footer#footer .contant ul.social-links {
+	padding: 0;
+	margin-top: 95px;
+}
+
+footer#footer .contant ul.social-links li {
+	margin-right: 8px;
+}
+
+footer#footer .contant ul.social-links li a {
+	width: 50px;
+	height: 50px;
+	display: block;
+	border-radius: 50%;
+	background-color: #353638;
+	color: #ffffff;
+	text-align: center;
+	line-height: 50px;
+}
+
+footer#footer .contant ul.social-links li a:hover {
+	background-color: #ef473a;
+}
+
+footer#footer .contant ul.twitter {
+	padding: 0;
+}
+
+footer#footer .contant ul.twitter li {
+	font-size: 15px;
+	color: #757474;
+	line-height: 24px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #2a2929;
+	position: relative;
+	text-indent: 20px;
+	padding-right: 5px;
+}
+
+footer#footer .contant ul.twitter li:last-child {
+	border: none;
+	margin-bottom: 0;
+}
+footer#footer .contant ul.twitter li::before {
+	content: "\f099";
+	font-family: "Font Awesome 5 Brands";
+	position: absolute;
+	top: 5px;
+	right: -15px;
+	line-height: 1em;
+	color: #ef473a;
+}
+footer#footer .form-group input {
+	font-size: 14px;
+	color: #c6c6c6;
+	line-height: 25px;
+	background-color: #2c2b2b;
+	border-radius: 0;
+	border-color: transparent;
+	font-family: 'Cairo';
+	margin-bottom: 15px;
+}
+footer#footer .form-group button {
+	font-size: 14px;
+	color: #ffffff;
+	background-color: #ef473a;
+	border-radius: 0;
+	border: transparent;
+	font-family: 'Cairo';
+	line-height: 25px;
+}
+footer#footer .copyright {
+	border-top: 2px solid #262626;
+}
+footer#footer .copyright p {
+	font-size: 15px;
+	line-height: 70px;
+	color: #565656;
+	margin-bottom: 0;
+}
+footer#footer .form-group .error {
+	color: red;
+}
+@media (max-width: 1199px) {
+	section.slider img {
+		width: 80%;
+	}
+}
+
+@media (max-width: 991px) {
+	.imges {
+		position: absolute;
+		right: -75px;
+		bottom: 0;
+	}
+	header .overlay .banner-text button {
+		width: 53%;
+	}
+	header .overlay .banner-text button:last-child {
+		margin-right: 0px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	section.feature {
+		padding: 88px 0 0px;
+	}
+	section.feature .features-1 {
+		margin-top: -25px;
+	}
+	section.feature .features-2 {
+		margin-top: -25px;
+	}
+	section.feature .features-1 .media,
+	section.feature .features-2 .media {
+		margin-bottom: 0;
+		min-height: 153px;
+	}
+	section.feature .media h5 {
+		font-size: 20px;
+	}
+	section.feature .media p {
+		font-size: 14px;
+	}
+	section.feature .media i {
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+	section.option .media {
+		margin-bottom: 30px;
+	}
+	section.option .imges {
+		right: -45%;
+		bottom: -210px;
+	}
+	section.option {
+		padding: 80px 0 31px;
+	}
+	footer#footer .contant ul.social-links li {
+		margin-right: 5px;
+	}
+	footer#footer .contant ul.social-links li a {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	header .overlay .app-icon {
+		padding-top: 60px;
+	}
+	header .overlay .banner-text {
+		margin-bottom: 500px;
+	}
+	.imges {
+		text-align: center;
+		padding-top: 50px;
+		position: absolute;
+		bottom: -300px;
+		right: 20%;
+	}
+	header .overlay .banner-text button p {
+		padding-top: 0;
+	}
+	header .overlay .banner-text button img {
+		width: 40px;
+	}
+	header .overlay .banner-text button i {
+		font-size: 40px;
+	}
+	section.feature {
+		padding: 88px 0 30px;
+	}
+	section.feature .features-1 .media,
+	section.feature .features-2 .media {
+		margin-bottom: 10px;
+	}
+	section.feature .media h5 {
+		font-size: 24px;
+	}
+	section.feature .media p {
+		font-size: 15px;
+	}
+	section.feature .media i {
+		width: 70px;
+		height: 70px;
+		line-height: 70px;
+	}
+	section.option {
+		padding: 135px 0 350px;
+	}
+	section.option .imges {
+		right: 0%;
+		bottom: -776px;
+	}
+	section.option .imges img {
+		width: 100%;
+	}
+	section.slider .carousel a {
+		display: none;
+	}
+	section.slider img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 575px) {
+	header .overlay {
+		text-align: center;
+	}
+	header .overlay .app-icon {
+		padding-top: 20px;
+	}
+	section.option .imges {
+		right: 8%;
+		bottom: -645px;
+	}
+	section.option .imges img {
+		width: 90%;
+	}
+}

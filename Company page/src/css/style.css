@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+body {
+	font-family: 'Cairo', sans-serif;
+	direction: rtl;
+	overflow-x: hidden;
+	text-align: right;
+}
+
+/*==============
+        header
+  ==============*/
+
+header {
+	background-image: url(../img/banner.jpg);
+	background-size: cover;
+	background-position: center center;
+	min-height: 100vh;
+}
+
+header .overlay .slider .carousel-inner .carousel-item {
+	min-height: 100vh;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	z-index: 9;
+}
+
+header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
+	bottom: 30%;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+	font-size: 40px;
+	margin-bottom: 60px;
+	transform: translateY(-50px);
+	transition: all 1s ease;
+}
+
+header .overlay .slider .carousel-inner .carousel-item .carousel-caption a {
+	padding: 20px 50px;
+	color: #ffffff;
+	background-color: #16aeca;
+	font-size: 18px;
+	border-radius: 30px;
+	display: inline-block;
+	transform: translateY(50px);
+	transition: all 1s ease;
+}
+
+header .overlay .slider .carousel-inner .carousel-item.active .carousel-caption a {
+	transform: translateY(0);
+}
+
+header .overlay .slider .carousel-inner .carousel-item.active .carousel-caption h3 {
+	transform: translateY(0);
+}
+
+header .overlay .slider .carousel-inner .carousel-item .carousel-caption a:hover {
+	text-decoration: none;
+	background-color: #dae413;
+	color: #555555;
+}
+
+header .overlay .slider .carousel-inner .carousel-item.active {
+	opacity: 1;
+}
+
+header .overlay .slider .carousel-inner .carousel-item.active .carousel-caption {
+	opacity: 1;
+}
+
+/*background: linear-gradient(to right, rgba(41, 153, 155, 0.8)0%, rgba(167, 173, 44, 0.8)100%);*/
+
+/*============
+        navBar
+  ==============*/
+
+#navBar {
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+	border-bottom: 1px solid transparent;
+	z-index: 10;
+}
+
+/*logo*/
+
+#navBar .navbar-brand img {
+	width: 90%;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+/*nav-item*/
+
+#navBar ul.navbar-nav li a {
+	color: #e8e8e8;
+	background-color: transparent;
+	padding: 15px 30px;
+	font-size: 16px;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#navBar ul.navbar-nav li a:focus,
+#navBar ul.navbar-nav li a:hover,
+#navBar ul.navbar-nav li a.active {
+	color: #16aeca;
+	background-color: #ffffff;
+}
+
+/*onTransparrent*/
+
+#navBar.onTransparrent {
+	background-color: #ffffff;
+	border-bottom: 2px solid #eee;
+}
+
+/*nav-item*/
+
+#navBar.onTransparrent ul li a {
+	color: #16aeca;
+}
+
+#navBar.onTransparrent ul.navbar-nav li a:focus,
+#navBar.onTransparrent ul.navbar-nav li a:hover,
+#navBar.onTransparrent ul.navbar-nav li a.active {
+	color: #dae413;
+	background-color: #16aeca;
+}
+
+/*logo*/
+
+#navBar.onTransparrent .navbar-brand img {
+	width: 80%;
+}
+
+/*nav-toggle*/
+
+#navBar button.navbar-toggler {
+	margin: 30px auto;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+#navBar button.navbar-toggler span {
+	color: #ffffff;
+}
+
+#navBar.onTransparrent button.navbar-toggler span {
+	color: #16aeca;
+}
+
+.navbar-toggler-left {
+	position: absolute;
+	left: 1rem;
+	top: 0;
+}
+
+/*==============
+   services
+   ==============*/
+
+section.services .title h3 {
+	margin-top: 75px;
+	margin-bottom: 50px;
+	font-size: 40px;
+	color: #070c0c;
+}
+
+section.services .card {
+	border-radius: 3px;
+	transition: all 1s ease;
+	height: 300px;
+}
+
+section.services .card .card-header {
+	background-color: transparent;
+	border: none;
+}
+
+section.services .card .card-header img {
+	width: 140px;
+	height: 140px;
+	margin: 50px auto;
+	margin-bottom: 30px;
+}
+
+section.services .card .card-header h2 {
+	font-size: 24px;
+	color: #000000;
+}
+
+section.services .card .card-body p {
+	opacity: 0;
+	font-size: 15px;
+	color: #919191;
+	transition: all 1s ease;
+}
+
+section.services .card:hover .card-body p {
+	opacity: 1;
+}
+
+section.services .card:hover {
+	height: 420px;
+}
+
+/*
+==========
+   gallery
+   ========*/
+
+section#gallery .title h2 {
+	font-size: 40px;
+	padding-top: 80px;
+	padding-bottom: 60px;
+}
+
+section#gallery .work-gallery a {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+section#gallery .work-gallery a .hover {
+	position: absolute;
+	background-color: rgba(22, 174, 202, 0.9);
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	color: #ffffff;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+section#gallery .work-gallery a .hover i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2em;
+}
+
+section#gallery .work-gallery a:hover .hover {
+	opacity: 1;
+}
+
+/*
+================
+  overlay-galery
+  ===============*/
+
+section#gallery .work-gallery .overlay-gallery {
+	background-color: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 10;
+	padding: 5% 10%;
+	opacity: 0;
+	transition: all 1s ease;
+	transform: translateY(-100vh);
+	margin-right: 0;
+}
+
+section#gallery .work-gallery .overlay-gallery:target {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+section#gallery .work-gallery .overlay-gallery img {
+	width: 100%;
+}
+
+section#gallery .work-gallery .gallery-text {
+	text-align: right;
+	margin-top: 40px;
+}
+
+section#gallery .work-gallery .gallery-text h3 {
+	font-size: 36px;
+	color: #16aeca;
+	margin-bottom: 30px;
+}
+
+section#gallery .work-gallery .gallery-text ul {
+	padding: 0;
+	padding-bottom: 40px;
+	border-bottom: 2px solid #fff;
+}
+
+section#gallery .work-gallery .gallery-text ul li {
+	font-size: 24px;
+	color: #555555;
+	font-size: 24px;
+}
+
+section#gallery .work-gallery .gallery-text ul li a {
+	color: #555555;
+}
+
+section#gallery .work-gallery .gallery-text p {
+	font-size: 24px;
+	color: #919191;
+	padding-top: 40px;
+	padding-bottom: 70px;
+}
+
+section#gallery .work-gallery .gallery-text a.visit {
+	font-size: 20px;
+	line-height: 50px;
+	border-radius: 25px;
+	padding: 0 30px;
+	background-color: #16aeca;
+	color: #ffffff;
+}
+
+section#gallery .work-gallery a.close {
+	color: #16aeca;
+	position: absolute;
+	top: 4%;
+	left: 10%;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/*
+=================
+   statistics  
+   ============*/
+
+section.statistics {
+	background-image: url(../img/bg2.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+section.statistics .overlay {
+	background-color: rgba(45, 178, 204, 0.8);
+	padding: 100px 0;
+}
+
+section.statistics .overlay .stat p {
+	font-size: 18px;
+	color: #85ecff;
+	line-height: 22px;
+}
+
+section.statistics .overlay .stat .count {
+	font-size: 40px;
+	line-height: 60px;
+	font-weight: bold;
+	color: #ddfaff;
+}
+
+/*
+==============
+   contacts
+===============*/
+
+section.contacts {
+	padding: 100px 0 60px;
+}
+
+section.contacts .row:first-child {
+	margin-bottom: 70px;
+}
+
+section.contacts .info {
+	padding-right: 30px;
+	text-align: right;
+}
+
+section.contacts .info h3 {
+	font-size: 24px;
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+
+section.contacts .info ul li {
+	font-size: 18px;
+	line-height: 25px;
+	color: #16aeca;
+	margin-bottom: 15px;
+}
+
+section.contacts .info ul {
+	padding: 0;
+}
+
+section.contacts .info ul li i {
+	margin-left: 6px;
+}
+
+section.contacts .contact {
+	align-items: center;
+	margin: 0 auto;
+}
+
+section.contacts .contact h3 {
+	font-size: 24px;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+
+section.contacts .contact form .form-inline {
+	align-items: center;
+	margin: 0 auto;
+}
+
+section.contacts .form form input,
+section.contacts .form form textarea {
+	background-color: #f7f7f7;
+	border: 2px solid #eee;
+	border-radius: 3px;
+	color: #5c5c5c;
+	font-family: ar-font;
+	font-size: 15px;
+	line-height: 25px;
+}
+
+section.contacts .form form button {
+	background-color: #16aeca;
+	font-family: ar-font;
+	font-size: 15px;
+	color: #ffffff;
+	line-height: 25px;
+	padding: 10px 25px;
+	border-radius: 3px;
+	border: 0;
+	margin-right: 15px;
+}
+
+section.contacts .cmxform {
+	width: 60%;
+	margin: 0 auto;
+}
+
+section.contacts .form form .error {
+	color: red;
+}
+
+/*
+=============
+footer
+==========*/
+
+footer .top-footer {
+	background-color: #171717;
+	padding: 75px 0;
+	text-align: right;
+}
+
+footer .top-footer h3 {
+	font-size: 18px;
+	line-height: 45px;
+	color: #85ecff;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+footer .top-footer h3:before {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 35px;
+	height: 2px;
+	background-color: #5c5c5c;
+}
+
+footer .top-footer p {
+	font-size: 15px;
+	line-height: 22px;
+	color: #919191;
+	margin-bottom: 50px;
+}
+
+footer .top-footer ul {
+	padding: 0;
+}
+
+footer .top-footer ul.social li a i {
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	border-radius: 2px;
+	background-color: #333333;
+	color: #acacac;
+	transition: all .5s ease;
+}
+
+footer .top-footer ul.social li {
+	margin-right: 5px;
+}
+
+footer .top-footer ul.social li a:hover i {
+	background-color: #16aeca;
+}
+
+footer .top-footer ul.contact-us li {
+	margin-bottom: 35px;
+	font-size: 18px;
+	color: #676767;
+}
+
+footer .top-footer ul.contact-us li:last-of-type {
+	margin-bottom: 0px;
+}
+
+footer .top-footer ul.contact-us li i {
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	border-radius: 2px;
+	background-color: #282828;
+	color: #acacac;
+	margin-left: 20px;
+}
+
+footer .copyright {
+	background-color: #111111;
+}
+
+footer .copyright p {
+	font-size: 15px;
+	line-height: 78px;
+	color: #919191;
+	margin-bottom: 0;
+}
+
+@media (max-width: 1181px) {
+	section#gallery .work-gallery .gallery-text h3 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	section#gallery .work-gallery .gallery-text ul {
+		padding-bottom: 15px;
+	}
+	section#gallery .work-gallery .gallery-text ul li {
+		font-size: 18px;
+	}
+	section#gallery .work-gallery .gallery-text p {
+		font-size: 25px;
+		padding-top: 15px;
+		padding-bottom: 20px;
+	}
+}
+
+@media (max-width: 980px) {
+	#navBar ul.navbar-nav li a {
+		padding: 15px 5px;
+	}
+	header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+		font-size: 30px;
+	}
+	header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
+		bottom: 25%;
+	}
+	section.services .card:hover {
+		height: 500px;
+	}
+	section.contacts .cmxform {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar {
+		padding: 0.5rem 0rem;
+		width: 100%;
+	}
+	nav#navBar .container {
+		width: 100%;
+		margin: auto 0;
+	}
+	#navBar .navbar-brand img {
+		width: 80%;
+	}
+	#navBar .navbar-collapse {
+		background-color: #16aeca;
+		z-index: 9;
+		transition: all 0.5s ease;
+		z-index: 10;
+	}
+	#navBar.onTransparrent .navbar-collapse {
+		background-color: #ffffff;
+	}
+	#navBar .navbar-collapse ul {
+		width: 140%;
+	}
+	#navBar .navbar-collapse ul li {
+		background-color: #16aeca;
+	}
+	#navBar.onTransparrent .navbar-collapse ul li {
+		background-color: #ffffff;
+	}
+	.map {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	section#gallery .work-gallery .gallery-text ul {
+		padding-bottom: 20px;
+	}
+	section#gallery .work-gallery .gallery-text h3 {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	section#gallery .work-gallery .gallery-text ul {
+		padding-bottom: 15px;
+	}
+	section#gallery .work-gallery .gallery-text ul li {
+		font-size: 13px;
+	}
+	section#gallery .work-gallery .gallery-text p {
+		font-size: 18px;
+		padding-top: 15px;
+		padding-bottom: 20px;
+	}
+	section#gallery .work-gallery .gallery-text a.visit {
+		font-size: 17px;
+		line-height: 45px;
+		padding: 0 22px;
+	}
+	section.contacts .cmxform {
+		width: 100%;
+	}
+	section.services .card {
+		margin-bottom: 20px;
+	}
+	section.services .card:hover {
+		height: 400px;
+	}
+}
+
+@media (max-width: 575px) {
+	.carousel a {
+		display: none;
+	}
+	.carousel-caption {
+		right: 2%;
+		left: 2%;
+	}
+	.work-gallery .col-md > .col-sm > a {
+		display: block !important;
+	}
+	.work-gallery .col-md > .col-sm > a img {
+		width: 100%;
+	}
+	section#gallery .work-gallery .overlay-gallery img {
+		width: 50%;
+	}
+	iframe {
+		width: 100%;
+	}
+	.navbar-nav {
+		padding: 0;
+	}
+}
+
+@media (max-width: 330px) {
+	section.services .card:hover {
+		height: 450px;
+	}
+}

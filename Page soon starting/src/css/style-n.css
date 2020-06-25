@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+
+body {
+	font-family: 'Cairo', sans-serif;
+	direction: rtl;
+}
+header {
+	background-image: url(../img/banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+header .brand {
+	padding: 20px 10px;
+	margin: 80px auto 50px;
+	border-bottom: 5px solid #464c54;
+	display: inline-block;
+}
